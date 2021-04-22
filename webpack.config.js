@@ -29,6 +29,10 @@ const config = (env, argv) => {
           test: /\.css$/,
           use: ['style-loader', 'css-loader'],
         },
+        {
+          test: /\.(eot|ttf|woff|woff2|svg)(\?v=\d+\.\d+\.\d+)?$/,
+          use: ['file-loader'],
+        },
       ],
     },
     plugins: [
