@@ -36,11 +36,16 @@ const App = () => {
       </aside>
       <main className="main">
         <header className="header">
-          <div className="search-container">
-            <i className="search-icon"></i>
-            <input className="search" type="search" placeholder="Search.."/>
+          <div className="left">
+            <i className="burger burger2"></i>
           </div>
-          <span className="avatar"></span>
+          <div className="right">
+            <div className="search-container">
+              <i className="search-icon"></i>
+              <input className="search" type="search" placeholder="Search.."/>
+            </div>
+            <span className="avatar"></span>
+          </div>
         </header>
         <h2 className="title">所有视频</h2>
         <div className="video-container">
