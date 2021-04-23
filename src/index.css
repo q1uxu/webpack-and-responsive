@@ -1,3 +1,181 @@
-.count {
-  color: skyblue;
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root, .container {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.aside {
+  background-color: #fff;
+  flex: 0 0 208px;
+}
+
+.main {
+  background-color: #F6F6F6;
+  flex: 1;
+  padding: 35px 48px;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.search-container {
+  width: 228px;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.search-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url('./assets/images/search.png') no-repeat center;
+}
+
+.search {
+  height: 100%;
+  border: none;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-left: 16px;
+  background-color: #EF5DA8;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.video-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.video {
+  flex-basis: calc(25% - 32px);
+  height: 167px;
+  border-radius: 8px;
+  margin: 16px;
+}
+
+.video-content {
+  height: 117px;
+  background-color: #6286ED;
+  border-radius: 8px 8px 0 0;
+}
+
+.video-name {
+  height: 25px;
+  line-height: 25px;
+  padding-left: 16px;
+  background-color: #fff;
+  font-size: 14px;
+}
+
+.video-time {
+  height: 25px;
+  line-height: 25px;
+  padding-left: 16px;
+  background-color: #fff;
+  font-size: 14px;
+  border-radius: 0 0 8px 8px;
+}
+
+.logo-container {
+  margin-top: 50px;
+  margin-left: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url('./assets/images/logo.png') no-repeat center;
+}
+
+.logo-name {
+  margin-right: 32px;
+}
+
+.burger {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: url('./assets/images/burger.png') no-repeat center;
+  cursor: pointer;
+}
+
+.menu-container {
+  margin: 48px 16px 0;
+}
+
+.menu {
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.menu.active {
+  background-color: #6286ED;
+}
+
+.menu:not(:first-of-type) {
+  margin-top: 12px;
+}
+
+.menu-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: no-repeat center;
+}
+
+.menu-icon.home {
+  background-image: url('./assets/images/home.png');
+}
+.menu-icon.personal {
+  background-image: url('./assets/images/personal.png');
+}
+.menu-icon.team {
+  background-image: url('./assets/images/team.png');
+}
+.menu-icon.news {
+  background-image: url('./assets/images/news.png');
+}
+.menu-icon.setting {
+  background-image: url('./assets/images/setting.png');
+}
+
+.menu-name {
+  margin-left: 10px;
+}
+
+.divider {
+  width: 160px;
+  height: 1px;
+  background-color: #e4e4e4;
+  margin: 25px 0;
 }
