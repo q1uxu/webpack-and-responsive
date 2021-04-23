@@ -8,6 +8,7 @@ const App = () => {
           <i className="logo"></i>
           <span className="logo-name">Test.</span>
           <i className="burger"></i>
+          <i className="logo logo2"></i>
         </div>
         <nav className="menu-container">
           <div className="menu active">

@@ -179,3 +179,38 @@ body {
   background-color: #e4e4e4;
   margin: 25px 0;
 }
+
+.logo2 {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .video {
+    flex-basis: calc(50% - 32px);
+  }
+
+  .aside {
+    flex-basis: 72px;
+  }
+
+  .logo-container {
+    margin: 24px auto;
+    flex-direction: column;
+  }
+  
+  .logo, .logo-name, .menu-name {
+    display: none;
+  }
+
+  .logo2 {
+    display: block;
+  }
+
+  .menu {
+    padding: 10px;
+  }
+  
+  .divider {
+    width: 40px;
+  }
+}
